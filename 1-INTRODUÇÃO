@@ -67,7 +67,7 @@ main(int argc, char** argv)
 }
 
 ###########################################################################################
-#DESCONTO DO VALOR DO PRODUTO COM PORCENTAGEM
+#DESCONTO DO VALOR DO PRODUTO COM PORCENTAGEM de 5%
 
 #include <iostream>
 #include <string>
@@ -84,6 +84,32 @@ main(int argc, char** argv)
 	cin >> preco;
 	cout << "O desconto e de 5% ";
     cout << (preco)-((desconto/100)*preco);
+    
+	cin.get(); 
+	return 0;
+}
+
+##########################################################################################
+#DESCONTO COM O VALOR DO PRODUTO,INSERINDO A PORCENTAGEM DO DESCONTO
+
+#include <iostream>
+#include <string>
+
+float preco;
+float desconto;
+
+
+using namespace std;
+
+main(int argc, char** argv)
+{
+	cout << "Qual valor do produto R$";
+	cin >> preco;
+	cout << "Qual a porcentagem do desconto %";
+	cin >> desconto;
+	preco = (preco)-((desconto/100)*preco);
+	cout << "R$" << preco;
+	
     
 	cin.get(); 
 	return 0;
