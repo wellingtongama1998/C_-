@@ -1,0 +1,90 @@
+#PRINT OLÁ MUNDO.
+#CRIAR VARIAVEL INT E INCREMENTAR +1
+#PAUSE
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+main(int argc, char** argv)
+{
+	cout << "Ola mundo!!!";
+	int i;
+	cout << "Digite um numero: ";
+	cin >> i;
+	cout << "Numero digitado " << i << " incrementando: " << i+1 << endl;
+	
+	cin.get(); 
+	return 0;
+}
+
+#######################################################################################
+#PEGA ANO ATUAL E ANO NASCIMENTO E
+#PRINTAR IDADE
+
+#include <iostream>
+#include <string>
+
+int idade;
+int anoatual;
+int anonascimento;
+using namespace std;
+
+main(int argc, char** argv)
+{
+	cout << "Qual ano voce nasceu ? ";
+	cin >> anonascimento;
+	cout << "Qual o ano atual ? ";
+	cin >> anoatual;
+	cout << "Sua idade: " << anoatual-anonascimento << endl;
+	
+	cin.get(); 
+	return 0;
+}
+
+##########################################################################################
+#COTAÇÃO DO DOLAR
+
+#include <iostream>
+#include <string>
+
+float dolar;
+float cotacaodolar;
+
+
+using namespace std;
+
+main(int argc, char** argv)
+{
+	cout << "Quanto voce tem em dolar ?$";
+	cin >> dolar;
+	cout << "Qual a cotacao do dolar para real ?";
+	cin >> cotacaodolar;
+	cout << "Em reais voce tera R$" << cotacaodolar*dolar;
+	cin.get(); 
+	return 0;
+}
+
+###########################################################################################
+#DESCONTO DO VALOR DO PRODUTO COM PORCENTAGEM
+
+#include <iostream>
+#include <string>
+
+float preco;
+float desconto = 5;
+
+
+using namespace std;
+
+main(int argc, char** argv)
+{
+	cout << "Qual o preco do produto ?R$";
+	cin >> preco;
+	cout << "O desconto e de 5% ";
+    cout << (preco)-((desconto/100)*preco);
+    
+	cin.get(); 
+	return 0;
+}
