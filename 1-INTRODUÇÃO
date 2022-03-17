@@ -114,3 +114,25 @@ main(int argc, char** argv)
 	cin.get(); 
 	return 0;
 }
+
+#################################################################################
+#TRANSFORMAR TEMPERATURA F° EM C°
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+float f;
+float c;
+int main()
+{
+	cout << "Qual a temperatura em farenhein ?";
+	cin >> f;
+	c = (f-32)* 5/9;
+	cout << c;
+	
+	
+	cin.get();
+	return 0;
+}
