@@ -136,3 +136,27 @@ int main()
 	cin.get();
 	return 0;
 }
+
+#################################################################################
+#DESCOBRIR PORCENTAGEM
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+main(){
+	int total,passadas,restam;
+	float andamento;
+	
+	cout << "Total de aula: ";
+	cin >> total;
+	cout << "Quantas aula passadas: ";
+	cin >> passadas;
+	
+	restam=total-passadas;
+	andamento=(passadas*100)/total;
+	cout << "Faltam " << restam << endl;
+	cout << "Andamento: " << andamento << "%";
+
+}
