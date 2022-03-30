@@ -160,3 +160,41 @@ main(){
 	cout << "Andamento: " << andamento << "%";
 
 }
+#########################################################################
+
+
+#include <iostream>
+#include <string>
+
+
+float caixa,pr;
+int qtd,i=0,porcentagem;
+
+
+
+using namespace std;
+
+main(int argc, char** argv)
+{
+	
+	cout << "Quantidade de dinheiro no caixa ?";
+	cin >> caixa;
+	cout << "Quantidade de produtos a ser comprada ?"; 
+	cin >> qtd;
+	
+	while (i<qtd){
+		i++;
+		cout << "Valor do produto " << i << " R$" ;
+		cin >> pr;
+		
+	}
+	porcentagem=(80*caixa/100);
+	cout << endl << caixa << endl;
+	cout << porcentagem;
+	
+	if (pr<=porcentagem){
+		
+	}
+	cin.get(); 
+	return 0;
+}
