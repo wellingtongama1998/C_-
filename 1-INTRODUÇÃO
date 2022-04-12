@@ -161,40 +161,28 @@ main(){
 
 }
 #########################################################################
-
-
 #include <iostream>
-#include <string>
-
-
-float caixa,pr;
-int qtd,i=0,porcentagem;
-
-
-
 using namespace std;
 
-main(int argc, char** argv)
-{
+main(){
+	int qtd;
+	float caixa, unid, total,valorpago;
 	
-	cout << "Quantidade de dinheiro no caixa ?";
-	cin >> caixa;
-	cout << "Quantidade de produtos a ser comprada ?"; 
-	cin >> qtd;
+	cout << "Digite quanto voce tem em caixa: ";
+	cin >>caixa;
+	cout << "Digite o valor unitário do produtos: ";
+	cin >> unid;
+	cout << "Digite a quantidade de produtos: ";
+	cin >>qtd;
 	
-	while (i<qtd){
-		i++;
-		cout << "Valor do produto " << i << " R$" ;
-		cin >> pr;
-		
+	total =qtd*unid;
+	// 0.8 * caixa = 80% do caixa
+	if(total >(0.8)){
+		//total *0.1 = 10%
+		valorpago = total+(total*0.1);
+		cout << "Compra a prazo" << endl;
+	}else{
+		valorpago = total-(total*0.05);
+		cout << "Compra a vista " << endl;
 	}
-	porcentagem=(80*caixa/100);
-	cout << endl << caixa << endl;
-	cout << porcentagem;
-	
-	if (pr<=porcentagem){
-		
-	}
-	cin.get(); 
-	return 0;
 }
