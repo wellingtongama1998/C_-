@@ -177,7 +177,8 @@ main(){
 	
 	total =qtd*unid;
 	// 0.8 * caixa = 80% do caixa
-	if(total >(0.8)){
+	caixa=caixa*0.8
+	if(total >(0.8*caixa)){
 		//total *0.1 = 10%
 		valorpago = total+(total*0.1);
 		cout << "Compra a prazo" << endl;
