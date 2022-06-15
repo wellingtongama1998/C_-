@@ -1,49 +1,44 @@
 https://www.fiap.com.br/imprensa/movimento-brasil-digital-noticias-15-cursos-mais-procurados-em-ti-fiap/
 
 #include <iostream>
-#include <string>
 
 using namespace std;
 
-int nota100=100,nota50=50,nota20=20,nota10=10;
-int nota5=5,nota2=2,nota1=1;
-int valor;
-main(){
+int main(){
+	int val;
 	
-	cout << "Escolha as notas: \n";
-	cout << "1=R$100 , 2=R$50, 3=R$20, 4=R$10" << endl;
-	cout << "5=R$5 , 6=2, 7=1" << endl;
-	cout << "Digite um valor";
-	cin >> valor;
+	cout << "Selecione o transporte: \n";
+	cout << "[1]=Carro, [2]=Moto, [3]=Aviao, [4]=Helicoptero\n";
 	
-	do{ 
-	switch (valor){
+	cin >> val;
+	
+	switch(val){
+	case 1:
+	case 2:
+		cout << "Transporte terrestre Selecionado \n";
+		switch(val){
 		case 1:
-			cout << "R$100";
+			cout << "Carro selecionado\n";
 			break;
 		case 2:
-			cout << "R$50";
+			cout << "Moto selecionado\n";
 			break;
-		case 3:
-			cout << "R$20";
-			break;
-		case 4:
-			cout << "R$10";
-			break;
-		case 5:
-			cout << "R$5";
-			break;
-		case 6:
-			cout << "R$2";
-			break;
-		case 7:
-			cout << "R$1";
-			break;
-		
-	}}while(invalido){
-		
+		}
+		break;
+    case 3:
+ 	case 4:
+ 		cout << "Transporte aereo Selecionado \n";
+ 		switch(val){                   
+ 		case 3:
+ 			cout << "Aviao Selecionado \n";
+ 			break;
+ 		case 4:
+ 			cout << "Helicoptero Selecionado\n";
+ 			break;
+        }
+        break;
+	default:
+		cout << "Nenhuma Opção selecionado";
 	}
-
-	
 	return 0;
 }
